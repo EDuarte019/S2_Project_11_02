@@ -14,15 +14,16 @@
 
 */
 
-// var thisTime = new Date(2018, 9, 12);
-// var dateString = thisTime.toString();
-// var dateHTML =
-
-var thisDate = new Date("October 12, 2018");
+// The variable thisDate is equal to the new a date.
+var thisDate = new Date();
+// the variable dateStr is the text in the variable of thisDate.
 var dateStr = thisDate.toLocaleDateString();
+// The dateHTML has a text string of h2 and adds the thisDate variable to be displayed. 
 var dateHTML = "<h2>" + thisDate + "</h2>";
 var thisDay = thisDate.getDay();
+// The value assigned to getEvent is the variable thisDay.
 var eventHTML = getEvent(thisDay);
+//The method has an ID of unionToday with the variable dateHTML plus eventHTML that is being before the end of the content so it is specified with a string.
 unionToday.insertAdjacentHTML("beforeend",
     dateHTML + eventHTML);
 
