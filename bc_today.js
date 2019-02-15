@@ -17,7 +17,7 @@
 // The variable thisDate is equal to the new a date.
 var thisDate = new Date();
 // the variable dateStr is the text in the variable of thisDate.
-var dateStr = thisDate.toLocaleDateString();
+var dateStr = thisDate.toLocaleString();
 // The dateHTML has a text string of h2 and adds the thisDate variable to be displayed. 
 var dateHTML = "<h2>" + thisDate + "</h2>";
 var thisDay = thisDate.getDay();
